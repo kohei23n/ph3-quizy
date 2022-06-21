@@ -14,14 +14,15 @@ use App\Http\Middleware\HelloMiddleware;
 |
 */
 
-Route::get('/', function () {
-  return view('list');
-});
+// Route::get('/', function () {
+//   return view('list');
+// });
 
 
-Route::get('quiz/1', 'QuizController@index1');
-Route::get('quiz/2', 'QuizController@index2');
 
+
+Route::get('/', 'QuizController@index_links');
+Route::get('quiz/{id}', 'QuizController@index_questions');
 
 
 
