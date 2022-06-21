@@ -36,6 +36,8 @@ Route::resource('rest', 'RestappController');
 // Route::get('hello/rest', 'HelloController@rest');
 
 Route::get('hello', 'HelloController@index');
+Route::get('hello/add', 'HelloController@add');
+Route::post('hello/add', 'HelloController@create');
 
 
 
