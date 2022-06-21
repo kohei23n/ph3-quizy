@@ -38,7 +38,6 @@ class QuizController extends Controller
 
         }
 
-        
 
 
         return view('quiz', ['questions' => $questions, 'choices' => $choices]);
