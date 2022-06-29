@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Middleware\HelloMiddleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +13,8 @@ use App\Http\Middleware\HelloMiddleware;
 |
 */
 
-// Route::get('/', function () {
-//   return view('list');
-// });
 
-
-
-
-Route::get('/', 'QuizController@index_links');
+Route::get('/', 'QuizController@list');
 Route::get('quiz/{id}', 'QuizController@index_questions');
 
 
